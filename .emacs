@@ -8,12 +8,18 @@
                       clojure-mode
                       smex
                       auto-complete
+					  jedi
+					  pyvenv
                       smartparens
+					  paredit
                       projectile
+                      solarized-theme
                       cider
+                      ido-vertical-mode
+					  popup-complete
                       magit
                       yasnippet
-					  yasnippet-snippets
+       		          yasnippet-snippets
                       evil))
 
 ; Initialise packages
@@ -35,7 +41,7 @@
 	("b9e9ba5aeedcc5ba8be99f1cc9301f6679912910ff92fdf7980929c2fc83ab4d" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "2d835b43e2614762893dc40cbf220482d617d3d4e2c35f7100ca697f1a388a0e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" default)))
  '(package-selected-packages
    (quote
-	(yasnippet-snippets cyberpunk-theme go-guru solarized-theme smex ido-vertical-mode git-gutter-fringe recentf-ext go-autocomplete cider projectile magit clojure-mode evil smartparens))))
+	(php-mode paredit pyvenv popup-complete jedi yasnippet-snippets cyberpunk-theme go-guru solarized-theme smex ido-vertical-mode git-gutter-fringe recentf-ext go-autocomplete cider projectile magit clojure-mode evil smartparens))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -44,11 +50,12 @@
  )
 
 
-(setq yas-snippet-dirs '("/Users/jmurugan/work/yasnippets"))
+;; (setq yas-snippet-dirs '("~/.emacs.d/yasnippets"))
 (require 'yasnippet)
 (yas-reload-all)
 
 
-(load-file ".emacs.d/go-config.el")
+;; (load-file ".emacs.d/go-config.el")
 (load-file ".emacs.d/preferences.el")
 (load-file ".emacs.d/clojure-config.el")
+(load-file ".emacs.d/python-config.el")
